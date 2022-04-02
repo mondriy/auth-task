@@ -1,0 +1,42 @@
+@import './Rules.scss';
+
+.contacts-container {
+  padding: 50px 0;
+  width: 80vmin;
+  margin: 0 auto;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 1.5em 0;
+  box-sizing: border-box;
+  padding: 15px 20px;
+  border-right: 2px solid $purpleLight;
+  border-left: 2px solid $purpleLight;
+  border-radius: 10px;
+}
+
+.contact:hover {
+  -webkit-box-shadow: 0px 0px 13px 0px rgba(144, 17, 101, 0.2);
+  -moz-box-shadow: 0px 0px 13px 0px rgba(144, 17, 101, 0.2);
+  box-shadow: 0px 0px 13px 0px rgba(144, 17, 101, 0.2);
+}
+
+.contact-name, .contact-phone {
+  display: block;
+  font-variant-numeric: lining-nums;
+  text-overflow: ellipsis;
+  overflow: hidden; 
+}
+
+.contact-name {
+  font-weight: $bold;
+  font-size: 16px;
+  margin-bottom: 0.3em;
+}
+
+.contact-creation {
+  margin-bottom: 2em;
+}

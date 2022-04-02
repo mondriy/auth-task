@@ -1,0 +1,108 @@
+@import './style/Form';
+@import './style/Contacts.scss';
+@import './style/Rules.scss';
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+  font-weight: $regular;
+  font-size: 14px;
+
+}
+
+input, button {
+  border: none;
+  background-color: #fff;
+  font-family: 'Raleway', sans-serif;
+  border-radius: 5px;
+}
+
+button {
+  cursor: pointer;
+}
+
+input[type=text], input[type=password] {
+  border-left: 1px solid $purpleLight;
+  border-right: 1px solid $purpleLight;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  font-variant-numeric: lining-nums;
+  text-overflow: ellipsis;
+  overflow: hidden; 
+}
+
+input[type=search] {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  font-variant-numeric: lining-nums;
+  text-overflow: ellipsis;
+  overflow: hidden; 
+
+  -webkit-box-shadow: 0px 0px 13px 0px rgba(144, 17, 101, 0.2);
+  -moz-box-shadow: 0px 0px 13px 0px rgba(144, 17, 101, 0.2);
+  box-shadow: 0px 0px 13px 0px rgba(144, 17, 101, 0.2);
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  -webkit-appearance:none;
+}
+
+input[type=search]:focus {
+  outline: none;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  outline: none;
+  -webkit-box-shadow: 0px 0px 13px 0px rgba(144, 17, 101, 0.2);
+  -moz-box-shadow: 0px 0px 13px 0px rgba(144, 17, 101, 0.2);
+  box-shadow: 0px 0px 13px 0px rgba(144, 17, 101, 0.2);
+}
+
+button.outline {
+  border: 1px solid $purpleLight;
+  padding: 10px 15px;
+  transition: .2s;
+}
+
+button.outline:hover {
+  background-color: $purpleLight;
+  color: #fff;
+}
+
+button.filled {
+  background-color: $purpleLight;
+  padding: 10px 15px;
+  color: #fff;
+  transition: .2s;
+}
+
+button.filled:hover {
+  background-color: $purpleDark;
+}
+
+::-webkit-scrollbar {
+  width: 0.8em;
+}
+
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cecece;
+  border-radius: 50px;
+  border: 0.25em solid #fff;
+}
