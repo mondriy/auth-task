@@ -6,7 +6,8 @@
 ```npm install -g concurrently```
 
 ### Установка зависимостей
-```npm run all-dependencies```
+BACKEND:  ```npm install```
+FRONTEND:  ```cd frontend```  ```npm install```
 
 ### Запуск проекта
 ```npm run dev```
